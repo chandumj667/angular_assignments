@@ -1,0 +1,33 @@
+<!-- PS9 Validation with Regular Expressions -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PS9/styles.css">
+    <title>Validation with RegEx</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <li>
+                <label for="password">Password</label>
+                <input autofocus required type="password" id="password" name="password" autocomplete="off" placeholder="8-12 characters"
+                    pattern="^(?=.{8,})(?=.[a-z])(?=.[A-Z])(?=.*[\d])(?=.*[\W]).*$" title="Password must be 8 or more characters
+                    with at least one number, an uppercase letter, and one special character">
+            </li>
+            
+            <li>
+                <label for="cnfpsd">Confirm Password</label>
+                <input autofocus required type="password" id="cnfpsd" name="cnfpsd" autocomplete="off" placeholder="Confirm Password"
+                    pattern="^(?=.{8,})(?=.[a-z])(?=.[A-Z])(?=.*[\d])(?=.*[\W]).*$" title="Password must be 8 or more characters
+                    with at least one number, an uppercase letter, and one special character">
+            </li>
+            <li>
+                <button type="submit">Sign UP</button>
+            </li>
+        </fieldset>
+    </form>
+</body>
+</html>

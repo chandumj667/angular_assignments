@@ -1,0 +1,52 @@
+<!-- PS10 Styling the Fields -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PS10/styles.css">
+    <title>Valid or Invalid</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset id="validation">
+            <legend>Personal Details</legend>
+            <ol>
+                <li>
+                    <label for="fname">First Name</label>
+                    <input type="text" placeholder="Robert " name="fname" id="fname" autofocus required>
+                </li>
+    
+                <li>
+                    <label for="lname">Last Name</label>
+                    <input type="text" placeholder="Downey Jr" name="lname" id="lname" autofocus required>
+                </li>
+    
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="rdj.ironman@gmail.com" id="email" name="email" autofocus required>
+                </li>
+
+                <li>
+                    <label for="password">Password</label>
+                    <input autofocus required type="password" id="password" name="password" autocomplete="off"
+                        placeholder="8-12 characters" pattern="^(?=.{8,})(?=.[a-z])(?=.[A-Z])(?=.*[\d])(?=.*[\W]).*$" title="Password must be 8 or more characters
+                                    with at least one number, an uppercase letter, and one special character">
+                </li>
+
+                <li>
+                    <label for="cnfpsd">Confirm Password</label>
+                    <input autofocus required type="password" id="cnfpsd" name="cnfpsd" autocomplete="off"
+                        placeholder="Confirm Password" pattern="^(?=.{8,})(?=.[a-z])(?=.[A-Z])(?=.*[\d])(?=.*[\W]).*$" title="Password must be 8 or more characters
+                                    with at least one number, an uppercase letter, and one special character">
+                </li>
+
+                <li class="btn">
+                    <button type="submit" class="sbt">Submit</button>
+                </li>
+            </ol>
+        </fieldset>
+    </form>
+</body>
+</html>

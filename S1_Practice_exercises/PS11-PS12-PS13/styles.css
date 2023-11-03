@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&family=Roboto:wght@100;500;700&display=swap');
+
+*{
+    font-family: 'Kanit','Roboto', sans-serif;
+}
+
+/* PS 11 - Styling Tables with Pseudo classes  */
+table{
+    border-collapse: collapse;
+    width: 600px;
+    margin: 100px auto;
+}
+.heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    border-bottom: 2px solid #18ac11;
+    letter-spacing: 5px;
+    background: #000;
+}
+th,
+td{
+    padding: 5px 0px 5px 10px; 
+    border: none;
+    text-align: left;
+}
+th{
+    background-color: #414141;
+    color: #ffffff;
+}
+
+/* PS 12 - Striping Rows with :nth-of-type  */
+tr:nth-of-type(even){
+    background-color: #18ac11;
+    color: white;
+}
+tr:nth-of-type(odd) {
+    background-color: #76eb8e;
+}
+
+/* PS 13 - Bolding the Last Row with :last-child */
+tr:last-child,
+td:last-child{
+    color: black;
+    font-weight: 500;
+}
+
+tr:last-child,
+tr:last-child td:last-child{
+    font-size: 20px;
+}

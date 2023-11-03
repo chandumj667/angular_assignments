@@ -1,0 +1,56 @@
+<!--PS4 Creating User-Friendly Web Forms
+    and 
+    PS5 Styling the Web Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PS4-PS5/styles.css">
+    <title>Project Information</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset id="project_info">
+            <legend>Project Information</legend>
+            <ol>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Robert Downey Jr" required>
+                </li>
+
+                <li>
+                    <label for="priority">Priority</label>
+                    <input  type="range" min="0" max="10" value="1" name="priority" id="priority">
+                </li>
+                <li>
+                    <label for="hours">Estimated Hours</label>
+                    <input type="number" min="0" max="1000" placeholder="12" name="hours" id="hours">
+                </li>
+                <li>
+                    <label for="date">Start date</label>
+                    <input type="date" value="25-11-2000" id="date" required>
+                </li>
+                <li>
+                    <label for="email">Email Contact</label>
+                    <input type="email" placeholder="robert.downey.jr@gmail.com" required>
+                </li>
+                <li>
+                    <label for="links">Staging URL</label>
+                    <input type="url" id="links" name="links" placeholder="https://www.rdj.com" required>
+                </li>
+                <li>
+                    <label for="color">Project Color</label>
+                    <input type="color" id="color" name="color"  required>
+                </li>
+                <li class="buttons">
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="reset">Reset</button>
+                </li>
+
+            </ol>
+        </fieldset>
+    </form>
+</body>
+</html>

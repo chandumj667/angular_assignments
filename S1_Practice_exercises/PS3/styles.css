@@ -1,0 +1,24 @@
+*{
+    font-family: sans-serif;
+}
+
+article{
+    border: 2px solid black;
+    padding: 0px 20px;
+    width: 40%;
+    margin: auto auto;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.block{
+    color: red;
+}
+
+dt{
+    font-weight: 600;
+}

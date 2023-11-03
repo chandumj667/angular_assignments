@@ -1,0 +1,68 @@
+fieldset {
+    padding: 20px;
+    width: 250px;
+    margin: 50px auto;
+    border: 2px solid black;
+}
+
+.hero {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+legend {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid black;
+
+}
+
+.block {
+    color: rgb(12, 195, 73);
+}
+
+label {
+    font-family: sans-serif;
+}
+
+input {
+    padding: 5px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+
+input:focus {
+    box-shadow: 0px 0px 10px rgb(12, 195, 73);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sbt,
+#rst {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+#sbt,
+#rst:hover {
+    color: whitesmoke;
+    background-color: rgb(12, 195, 73);
+}
+
+#rst,
+#sbt:hover {
+    border: 1px solid rgb(12, 195, 73);
+    color: rgb(12, 195, 73);
+    background-color: whitesmoke;
+}

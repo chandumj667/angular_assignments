@@ -1,0 +1,71 @@
+<!--
+    PS11 - Styling Tables with Pseudo classes (creating the structure of the table and some stylings)
+    and
+    PS12 - Striping Rows with :nth-of-type (making the alternative rows as specific color)
+    and 
+    PS13 - Bolding the Last Row with :last-child (making the last row as bold and increasing the last data cell of last row font)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PS11-PS12-PS13/styles.css">
+    <title>Billing Invoice</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th colspan="4" class="heading">
+                Billing Invoice
+            </th>
+            
+        </tr>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>Coffee mug</td>
+            <td>$10.00</td>
+            <td>5</td>
+            <td>$50.00</td>
+        </tr>
+
+        <tr>
+            <td>Polo shirt</td>
+            <td>$20.00</td>
+            <td>5</td>
+            <td>$100.00</td>
+        </tr>
+
+        <tr>
+            <td>Red stapler</td>
+            <td>$9.00</td>
+            <td>4</td>
+            <td>$36.00</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Subtotal</td>
+            <td>$186.00</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Shipping</td>
+            <td>$12.00</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Total Due</td>
+            <td>$198.00</td>
+        </tr>
+
+    </table>
+</body>
+</html>
